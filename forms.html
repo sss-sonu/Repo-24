@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="icon" href="C:\Users\Sonia\Downloads\soniaa.jpeg"><!--HTML Favricon-->
+        <style>
+            .form1 input{
+                width:100%;
+            }
+             main{
+                padding-left: 30px;
+                padding-right: 20px;
+            }
+            header,img,a{
+                display:flex;
+                padding-left: 5px;
+                padding-right: 25px;
+            }
+            header{
+                background-color: rgba(220, 220, 220, 0.779);
+                height: 80px;
+            }
+            header a img{
+                padding-top: 5px;
+                height:70px;
+            }
+            footer,ul,li{
+                background-color: rgba(220, 220, 220, 0.779);
+                
+            }
+            *{
+                border:1px solid black;
+            }
+            legend{
+                margin:2%;
+                padding:2%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="contact.html"><img src="C:\Users\Sonia\Downloads\trek.jpg" alt="image" heigth="60px" width="80px"></a>
+            
+            <a href="home.html" style="padding-top: 30px">Home</a>
+            <a href="tables.html" style="padding-top: 30px">Table Practice</a>
+            <a href="forms.html" style="padding-top: 30px">Form Practice</a>
+            <a href="contact.html" style="padding-top: 30px">Contact Us</a>
+        </header>
+
+        <main>
+            <h2>Form 1</h2>
+            <form class="form1">
+                <fieldset>
+                    <legend ><b>Login Form</b></legend>
+    
+                    <label for="fname">First name:</label><br>
+                    <input type="text" name="fname" value="" placeholder="first name"><br><br>
+    
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" name="lname" value="" placeholder="last name"><br><br>
+    
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="pwd" value="" placeholder="password"><br><br>
+                    
+                    <input type="submit">
+                </fieldset>
+            </form>
+            <h2>Form 2</h2>
+            <form>
+                <fieldset>
+                    <legend style="font-size: large;"><b>Student Registration</b></legend><br>
+                    <label for="reg">Registeration ID:</label><br>
+                    <input type="text" name="reg" value="" required><br>
+    
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" value="" required><br>
+
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" name="dob"><br>
+                    
+                    <label for="email">Email ID:</label><br>
+                    <input type="email" name="email" value="" required><br>
+    
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br><br>
+    
+                    <label for="branch">Branch:</label>
+                    <select id="branch" name="branch">
+                        <option value="CSE">CSE</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Textile">Textile</option>
+                        <option value="IT">IT</option>
+                        <option value="Civil">Civil</option>
+                    </select><br><br>
+    
+                    <label for="quali">Qualification:</label><br>
+                    
+                    <input type="checkbox" name="quali1" value="Matric">
+                    <label for="quali1">Matric</label><br>
+                    
+                    <input type="checkbox" name="diploma" value="Diploma">
+                    <label for="diploma">Diploma</label><br>
+                    
+                    <input type="checkbox" name="quali2" value="12">
+                    <label for="quali2">12th</label><br>
+                    
+                    <input type="checkbox" name="quali3" value="BTech">
+                    <label for="quali3">BTech.</label><br><br>
+    
+                    <input type="submit">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </main>
+        
+        <footer>
+            <ul style="list-style-type: none">
+                <li><a href="home.html">Home </a></li>
+                <li><a href="tables.html">Table Practice </a></li>
+                <li><a href="forms.html">Form Practice </a></li>
+                <li><a href="contact.html">Contact Us </a></li>
+            </ul>
+            <p style="text-align: center">&copy;sonia-2025</p>
+        </footer>
+        
+    </body>
+</html>
