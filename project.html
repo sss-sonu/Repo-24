@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            *{
+                border: 1px solid black;
+                box-sizing:border-box;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            header{
+                display:flex;
+                justify-content:space-around;
+                width:100vw;
+                height: 15vh;
+                background-color: white;
+                color:black;
+                font-weight: 500;
+            }
+            header>ul{
+                display:flex;
+                justify-content:space-between;
+                padding:1em;
+            }
+            header ul li{
+                list-style-type:none;
+                margin-left:5vw;
+                padding: 1em;
+                
+            }
+            header a{
+                text-decoration: none;
+                padding:1em;
+            }
+            header a:hover{
+                font-weight:bold;
+                font-size: larger;
+               
+            }
+            .down_border{
+                border:1px solid black;
+                border-bottom:2px solid rgb(255, 115, 0);
+            }
+            form{
+                width:25vw;
+                border:1px solid black;
+                border-radius: 10px;
+                color:white;
+                background-color: black;
+                text-align: center;
+                padding: 2%;
+                position: absolute;
+                top:17vh;
+                left: 70vw;
+            }
+            form>input{
+                background-color: black;
+                margin:2%;
+
+            }
+            form span{
+                color:rgb(255, 115, 0);
+            }
+            p span:hover{
+                font-size: larger;
+                font-weight: bold;
+            }
+            form button{
+                margin: 2%;
+            }
+            form h1{
+                color:rgb(255, 115, 0);
+                font-weight: bold;
+            }
+            form button:hover{
+                font-size: larger;
+                font-weight: bold;
+            }
+            div img{
+                height: 30px;
+            }
+            div img:hover{
+                height: 40px;
+            }
+            .search{
+                height: 6vh;
+            }
+            main{
+                height: 75vh;
+                background-image: url(./images/Screenshot\ \(14\).png);
+            }
+            main div{
+                color:white;
+                padding:4%;
+            }
+            main h1 span{
+                color: rgb(255, 115, 0);
+                font-size:larger;
+                font-weight: bold;
+            }
+            main div a{
+                background-color: rgb(255, 115, 0);
+                padding: 1%;
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+                border:1px solid black;
+                border-radius: 5%;
+            }
+            main div p{
+                margin:2% 0% 3% 0%;
+            }
+            footer{
+                background-color: black;
+                height: 10vh;
+                color:white;
+                text-align: center;
+            }
+
+        </style>  
+    </head>
+    <body>
+        <header>
+            <h1 style=" color:rgb(255, 115, 0)">PraRoz</h1>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#design">DESIGN</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <ul class="search">
+                <input type="text" id="search" placeholder="Type to Search">
+                <label for="search" style="background-color:rgb(255, 115, 0)">Search</label>
+            <ul> 
+        </header>
+        <main>
+            <div>
+                <h1>Web Design & <br><span>Development</span></h1>
+                <p>Web design is the art of crafting the look and feel of a website or app. <br>It’s everything a user sees and 
+                interacts with, from the overall layout and<br> color scheme (UI design) to the user experience (UX design)</p>
+                <a href="#join us">Join Us</a>
+            </div>
+            
+            <form>
+                <h1>Login Here</h1>
+                <input type="text" id="name" class="down_border" placeholder="Enter Email Here" ><br>
+                <input type="password" id="pwd" class="down_border" placeholder="Enter Password Here"><br>
+                <button style="background-color:rgb(255, 115, 0)">Login</button>
+                <p>Don't have an account ?<br><span>Sign up</span> here</p>
+                <p>Login with</p>
+                <div>
+                    <img src="./images/instag.png">
+                    <img src="./images/fb.png">
+                    <img src="./images/goolgu.png">
+                    <img src="./images/twitterr.png">
+                </div>
+            </form>
+        </main>
+        <footer>
+            &copy 2025
+        </footer>
+    </body>
+</html>
